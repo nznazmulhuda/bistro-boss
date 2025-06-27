@@ -6,7 +6,7 @@ interface SectionTitleProps {
 export default function SectionTitle({ title, semiTitle }: SectionTitleProps) {
   return (
     <div className="mt-20 mb-12">
-      <h5 className="font-inter text-center text-[20px] text-[#D99904] italic">
+      <h5 className="font-inter mb-4 text-center text-[20px] text-[#D99904] italic">
         {semiTitle}
       </h5>
 
