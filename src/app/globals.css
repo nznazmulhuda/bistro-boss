@@ -11,3 +11,9 @@
 .font-raleway {
   font-family: var(--font-raleway);
 }
+
+.swiper-slide-thumb-active {
+  border: 4px solid rgb(29, 29, 29);
+  padding: 2px;
+  transition: all ease 0.3s;
+}
