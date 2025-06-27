@@ -48,7 +48,7 @@ export default function Banner() {
         navigation={false}
         thumbs={{ swiper: thumbsSwiper }}
         modules={[FreeMode, Thumbs]}
-        className="h-[804px] w-full"
+        className="h-[calc(100vh_-_155px)] w-full"
       >
         {slides.map((slide) => (
           <SwiperSlide className="cursor-grab">
@@ -61,15 +61,15 @@ export default function Banner() {
         onSwiper={setThumbsSwiper}
         loop={true}
         spaceBetween={10}
-        slidesPerView={4}
+        slidesPerView={5}
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="mt-5 w-[20%]"
+        className="mt-10 flex w-[30%] items-center justify-center"
       >
         {slides.map((slide) => (
-          <SwiperSlide className="w-1/2 cursor-pointer">
-            <Image src={slide.url} alt="slides" width={100} />
+          <SwiperSlide className="cursor-pointer">
+            <Image src={slide.url} alt="slides" />
           </SwiperSlide>
         ))}
       </Swiper>
