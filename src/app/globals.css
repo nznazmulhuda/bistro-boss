@@ -17,3 +17,18 @@
   padding: 2px;
   transition: all ease 0.3s;
 }
+
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 32px;
+}
+
+.swiper-pagination-bullet {
+  width: 15px !important;
+  height: 15px !important;
+  background: #d0d0d0 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #007aff !important;
+}

@@ -1,4 +1,5 @@
 import Banner from "@/components/pages/home/banner/banner";
+import CallInAction from "@/components/pages/home/callInAction/callInAction";
 import OrderSlider from "@/components/pages/home/order/order";
 import SectionTitle from "@/components/shared/sectionTitle/sectionTitle";
 
@@ -13,6 +14,8 @@ export default function Homepage() {
       />
 
       <OrderSlider />
+
+      <CallInAction />
     </>
   );
 }
