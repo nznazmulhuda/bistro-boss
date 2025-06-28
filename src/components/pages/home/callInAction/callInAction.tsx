@@ -1,7 +1,6 @@
 import ChefService from "@/assets/home/chef-service.jpg";
 
 export default function CallInAction() {
-  console.log(ChefService);
   return (
     <section
       className="container mx-auto flex items-center justify-center"

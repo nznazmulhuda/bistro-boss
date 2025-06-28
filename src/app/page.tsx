@@ -1,4 +1,5 @@
 import Banner from "@/components/pages/home/banner/banner";
+import Blog from "@/components/pages/home/blog/blog";
 import CallInAction from "@/components/pages/home/callInAction/callInAction";
 import CallUs from "@/components/pages/home/callUs/callUs";
 import Menu from "@/components/pages/home/menu/menu";
@@ -29,6 +30,8 @@ export default function Homepage() {
       <SectionTitle title="CHEF RECOMMENDS" semiTitle="---Should Try---" />
 
       <Recommend />
+
+      <Blog />
     </>
   );
 }
