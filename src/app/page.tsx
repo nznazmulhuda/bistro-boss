@@ -3,6 +3,7 @@ import CallInAction from "@/components/pages/home/callInAction/callInAction";
 import CallUs from "@/components/pages/home/callUs/callUs";
 import Menu from "@/components/pages/home/menu/menu";
 import OrderSlider from "@/components/pages/home/order/order";
+import Recommend from "@/components/pages/home/recommend/recommend";
 import SectionTitle from "@/components/shared/sectionTitle/sectionTitle";
 
 export default function Homepage() {
@@ -24,6 +25,10 @@ export default function Homepage() {
       <Menu />
 
       <CallUs />
+
+      <SectionTitle title="CHEF RECOMMENDS" semiTitle="---Should Try---" />
+
+      <Recommend />
     </>
   );
 }
