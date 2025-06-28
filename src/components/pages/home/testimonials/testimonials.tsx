@@ -13,7 +13,7 @@ export default function Testimonials() {
       {/* content */}
       <main>
         {/* swiper */}
-        <TestimonialCards key={"testimonials"} />
+        <TestimonialCards key={"Testimonials section"} />
       </main>
     </section>
   );
