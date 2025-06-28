@@ -5,6 +5,7 @@ import CallUs from "@/components/pages/home/callUs/callUs";
 import Menu from "@/components/pages/home/menu/menu";
 import OrderSlider from "@/components/pages/home/order/order";
 import Recommend from "@/components/pages/home/recommend/recommend";
+import Testimonials from "@/components/pages/home/testimonials/testimonials";
 import SectionTitle from "@/components/shared/sectionTitle/sectionTitle";
 
 export default function Homepage() {
@@ -32,6 +33,8 @@ export default function Homepage() {
       <Recommend />
 
       <Blog />
+
+      <Testimonials />
     </>
   );
 }
