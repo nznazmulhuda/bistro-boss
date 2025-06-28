@@ -7,7 +7,7 @@ export default function Blog() {
     <section
       className="w-full py-[130px]"
       style={{
-        background: `linear-gradient(0deg, rgba(21, 21, 21, 0.70) 0%, rgba(21, 21, 21, 0.70) 100%), url(${FeaturedImage.src}) lightgray 50% / cover no-repeat;`,
+        background: `linear-gradient(0deg, rgba(21, 21, 21, 0.70) 0%, rgba(21, 21, 21, 0.70) 100%), url(${FeaturedImage.src}) lightgray 50% / cover no-repeat`,
       }}
     >
       <main className="container mx-auto">

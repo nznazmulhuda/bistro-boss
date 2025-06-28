@@ -1,3 +1,4 @@
+import DarkButton from "@/components/shared/button/button";
 import MenuCard, { MenuItem } from "@/components/shared/card/menuCard";
 
 const menuItems: MenuItem[] = [
@@ -55,9 +56,7 @@ export default function Menu() {
           ))}
         </main>
 
-        <button className="font-inter cursor-pointer rounded-lg border-b-4 border-b-[#1F2937] px-[30px] py-5 text-xl font-medium text-[#1F2937] uppercase transition-all duration-350 ease-linear hover:bg-[#1F2937] hover:text-white">
-          View Full Menu
-        </button>
+        <DarkButton label=" View Full Menu" />
       </div>
     </section>
   );
