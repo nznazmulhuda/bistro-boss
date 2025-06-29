@@ -642,6 +642,30 @@ export default function OurMenu() {
           <DarkButton label="ORDER YOUR FAVOURITE FOOD" />
         </section>
 
+        {/* pizza section */}
+        <section className="flex flex-col items-center justify-center">
+          <SectionBanner
+            sectionTitle="PIZZA"
+            sectionDescription="Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+          />
+
+          <main className="container mx-auto mb-[56px] grid grid-cols-2 gap-6">
+            {menus
+              .filter((item) => item.category === "pizza")
+              .map((item) => (
+                <MenuCard
+                  title={item.name}
+                  description={item.recipe}
+                  price={String(item.price)}
+                  image={item.image}
+                  key={item._id}
+                />
+              ))}
+          </main>
+
+          <DarkButton label="ORDER YOUR FAVOURITE FOOD" />
+        </section>
+
         {/* salad section */}
         <section className="flex flex-col items-center justify-center">
           <SectionBanner
