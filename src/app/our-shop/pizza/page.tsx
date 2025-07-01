@@ -6,7 +6,7 @@ import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import clsx from "clsx";
 import { useEffect, useRef, useState } from "react";
 
-export default function PizzaPage () {
+export default function PizzaPage() {
   const [page, setPage] = useState(1);
   const [datas, setDatas] = useState<MenuItems[]>([]);
   const sectionRef = useRef<HTMLDivElement | null>(null);
@@ -14,7 +14,7 @@ export default function PizzaPage () {
 
   useEffect(() => {
     setDatas(pizzaData.slice(page * 9 - 9, page * 9));
-  }, [page]);
+  }, [page, pizzaData]);
 
   const scrollToSection = () => {
     sectionRef.current?.scrollIntoView({

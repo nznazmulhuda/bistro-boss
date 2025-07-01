@@ -6,7 +6,7 @@ import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import clsx from "clsx";
 import { useEffect, useRef, useState } from "react";
 
-export default function SoupPage () {
+export default function SoupPage() {
   const [page, setPage] = useState(1);
   const [datas, setDatas] = useState<MenuItems[]>([]);
   const sectionRef = useRef<HTMLDivElement | null>(null);
@@ -14,7 +14,7 @@ export default function SoupPage () {
 
   useEffect(() => {
     setDatas(soupData.slice(page * 9 - 9, page * 9));
-  }, [page]);
+  }, [page, soupData]);
 
   const scrollToSection = () => {
     sectionRef.current?.scrollIntoView({
