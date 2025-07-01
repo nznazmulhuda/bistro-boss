@@ -48,10 +48,9 @@ export default function Navbar() {
             </li>
 
             <li>
-              <Link href={"/auth"}>
-                <button className="font-inter flex cursor-pointer items-center text-[20px] font-extrabold text-white uppercase">
-                  Sign in / Out
-                  {/* profile iamge */}
+              <Link href={"/login"}>
+                <button className="font-inter flex cursor-pointer items-center gap-2 text-[20px] font-extrabold text-white uppercase">
+                  Sign in
                   <Image
                     src={ProfileLogo}
                     alt="Profile iamge"

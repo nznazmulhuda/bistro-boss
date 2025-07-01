@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import Navbar from "@/components/shared/navbar/navbar";
 import Footer from "@/components/shared/footer/footer";
 
-const HIDDEN_LAYOUT_ROUTES = ["/auth"];
+const HIDDEN_LAYOUT_ROUTES = ["/login", "/register"];
 
 export default function LayoutWrapper({
   children,
