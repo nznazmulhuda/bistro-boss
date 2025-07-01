@@ -55,8 +55,8 @@ export default function OrderSlider() {
           clickable: true,
         }}
       >
-        {slides.map((slide) => (
-          <SwiperSlide className="relative h-[450px] cursor-grab">
+        {slides.map((slide, id) => (
+          <SwiperSlide key={id} className="relative h-[450px] cursor-grab">
             <Image src={slide.url} alt="slides" className="h-full w-full" />
 
             <h4 className="font-cinzel text-shadow-2xl absolute bottom-6 left-1/2 z-40 -translate-x-1/2 text-[32px] font-semibold text-white text-shadow-black">

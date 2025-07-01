@@ -5,12 +5,7 @@ export interface MenuItem {
   image?: string;
 }
 
-export default function MenuCard({
-  title,
-  image,
-  description,
-  price,
-}: MenuItem) {
+export default function MenuCard({ title, description, price }: MenuItem) {
   return (
     <div className="flex justify-between">
       {/* image */}

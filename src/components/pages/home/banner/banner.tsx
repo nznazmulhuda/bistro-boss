@@ -37,8 +37,10 @@ const slides: { url: StaticImageData }[] = [
   },
 ];
 
+import type { Swiper as SwiperType } from "swiper";
+
 export default function Banner() {
-  const [thumbsSwiper, setThumbsSwiper] = useState<null | any>(null);
+  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
 
   return (
     <>
@@ -50,8 +52,8 @@ export default function Banner() {
         modules={[FreeMode, Thumbs]}
         className="h-[calc(100vh_-_155px)] w-full"
       >
-        {slides.map((slide) => (
-          <SwiperSlide className="cursor-grab">
+        {slides.map((slide, id) => (
+          <SwiperSlide key={id} className="cursor-grab">
             <Image src={slide.url} alt="slides" className="h-full w-full" />
           </SwiperSlide>
         ))}
@@ -67,8 +69,8 @@ export default function Banner() {
         modules={[FreeMode, Navigation, Thumbs]}
         className="mt-10 flex w-[30%] items-center justify-center"
       >
-        {slides.map((slide) => (
-          <SwiperSlide className="cursor-pointer">
+        {slides.map((slide, id) => (
+          <SwiperSlide key={id} className="cursor-pointer">
             <Image src={slide.url} alt="slides" />
           </SwiperSlide>
         ))}
