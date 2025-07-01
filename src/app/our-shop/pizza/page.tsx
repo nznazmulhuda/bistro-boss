@@ -1,12 +1,12 @@
 "use client";
 
 import ShopCard from "@/components/shared/card/shopCard";
-import { MenuItems, menus } from "../../our-menu/page";
+import menus, { MenuItems } from "@/lib/menu";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import clsx from "clsx";
 import { useEffect, useRef, useState } from "react";
 
-export default function () {
+export default function PizzaPage () {
   const [page, setPage] = useState(1);
   const [datas, setDatas] = useState<MenuItems[]>([]);
   const sectionRef = useRef<HTMLDivElement | null>(null);

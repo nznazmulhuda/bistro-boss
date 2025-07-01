@@ -1,10 +1,10 @@
 "use client";
 
 import ShopCard from "@/components/shared/card/shopCard";
-import { MenuItems, menus } from "../our-menu/page";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import clsx from "clsx";
 import { useEffect, useRef, useState } from "react";
+import menus, { MenuItems } from "@/lib/menu";
 
 export default function OurShop() {
   const [page, setPage] = useState(1);

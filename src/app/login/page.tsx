@@ -3,7 +3,7 @@ import LoginImage from "@/assets/others/authentication2.png";
 import LoginForm from "@/components/pages/login/loginForm";
 import Image from "next/image";
 
-export default function () {
+export default function LoginPage () {
   return (
     <section
       style={{

@@ -1,12 +1,12 @@
 "use client";
 
 import ShopCard from "@/components/shared/card/shopCard";
-import { MenuItems, menus } from "../../our-menu/page";
+import menus, { MenuItems } from "@/lib/menu";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import clsx from "clsx";
 import { useEffect, useRef, useState } from "react";
 
-export default function () {
+export default function DrinkPage () {
   const [page, setPage] = useState(1);
   const [datas, setDatas] = useState<MenuItems[]>([]);
   const sectionRef = useRef<HTMLDivElement | null>(null);
@@ -25,7 +25,7 @@ export default function () {
   if (drinkData.length <= 0) {
     return (
       <section>
-        <main className="mb-20 mt-2 flex items-center justify-center">
+        <main className="mt-2 mb-20 flex items-center justify-center">
           <h5 className="font-inter text-5xl font-semibold">No data found!</h5>
         </main>
       </section>

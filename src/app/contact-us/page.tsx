@@ -82,7 +82,7 @@ const locationData: LocationCardProps[] = [
   },
 ];
 
-export default function () {
+export default function ContactUsPage () {
   return (
     <section>
       {/* section banner */}

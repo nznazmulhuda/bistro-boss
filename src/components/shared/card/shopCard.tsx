@@ -1,5 +1,5 @@
-import { MenuItems } from "@/app/our-menu/page";
 import RecommendImage from "@/assets/home/slide1.jpg";
+import { MenuItems } from "@/lib/menu";
 import Image from "next/image";
 
 export default function ShopCard(data: MenuItems) {

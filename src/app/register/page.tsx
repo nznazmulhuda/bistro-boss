@@ -3,7 +3,7 @@ import RegisterImage from "@/assets/others/authentication2.png";
 import RegisterForm from "@/components/pages/register/registerForm";
 import Image from "next/image";
 
-export default function () {
+export default function RegisterPage() {
   return (
     <section
       style={{
