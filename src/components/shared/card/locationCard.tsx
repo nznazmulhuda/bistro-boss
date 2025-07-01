@@ -23,7 +23,9 @@ export default function LocationCard(props: LocationCardProps) {
         {/* lists */}
         <ul>
           {props.lists.map((item) => (
-            <li className="font-inter text-[16px] text-[#444]">{item}</li>
+            <li key={item} className="font-inter text-[16px] text-[#444]">
+              {item}
+            </li>
           ))}
         </ul>
       </div>
