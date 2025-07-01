@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Cinzel, Raleway } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/shared/navbar/navbar";
-import Footer from "@/components/shared/footer/footer";
+import LayoutWrapper from "@/components/shared/layout/layoutWrapper";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -21,28 +20,21 @@ const raleway = Raleway({
 
 export const metadata: Metadata = {
   title: "Bistro Boss Restaurant",
-  description: "Powerd by Next.js",
+  description: "Powered by Next.js",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html
       lang="en"
       className={`${inter.variable} ${cinzel.variable} ${raleway.variable}`}
     >
-      <body className={`antialiased`}>
-        {/* navbar */}
-        <Navbar />
-
-        {/* others body part */}
-        {children}
-
-        {/* footer */}
-        <Footer />
+      <body className="antialiased">
+        <LayoutWrapper>{children}</LayoutWrapper>
       </body>
     </html>
   );

@@ -2,6 +2,7 @@ import ShopingLogo from "@/assets/icon/shop.png";
 import ProfileLogo from "@/assets/icon/profile.svg";
 import Image from "next/image";
 import NavLink from "../navlink/navLink";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -47,15 +48,17 @@ export default function Navbar() {
             </li>
 
             <li>
-              <button className="font-inter flex cursor-pointer items-center text-[20px] font-extrabold text-white uppercase">
-                Sign in / Out
-                {/* profile iamge */}
-                <Image
-                  src={ProfileLogo}
-                  alt="Profile iamge"
-                  className="h-[50px] w-[54px]"
-                />
-              </button>
+              <Link href={"/auth"}>
+                <button className="font-inter flex cursor-pointer items-center text-[20px] font-extrabold text-white uppercase">
+                  Sign in / Out
+                  {/* profile iamge */}
+                  <Image
+                    src={ProfileLogo}
+                    alt="Profile iamge"
+                    className="h-[50px] w-[54px]"
+                  />
+                </button>
+              </Link>
             </li>
           </ul>
         </aside>
