@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { FormEvent } from "react";
 
-export default function LoginForm() {
+export default function RegisterForm() {
   const handleLogin = (e: FormEvent) => {
     e.preventDefault();
   };
@@ -12,11 +12,29 @@ export default function LoginForm() {
     <section className="w-[536px]">
       {/* title */}
       <h1 className="font-inter mb-5 text-center text-[40px] font-bold text-[#151515]">
-        Login
+        Sign Up
       </h1>
 
       {/* form */}
       <form className="mb-[34px] flex flex-col gap-6" onSubmit={handleLogin}>
+        {/* name */}
+        <div className="flex flex-col">
+          <label
+            htmlFor="name"
+            className="font-inter text-xl font-semibold text-[#444]"
+          >
+            Name*
+          </label>
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+            className="mt-4 rounded-lg border border-[#E8E8E8] bg-white px-9 py-7 text-[#A1A1A1] outline-none focus-within:outline-none"
+          />
+        </div>
+
         {/* email */}
         <div className="flex flex-col">
           <label
@@ -27,7 +45,7 @@ export default function LoginForm() {
           </label>
 
           <input
-            type="email"
+            type="text"
             name="email"
             placeholder="Enter your email"
             required
@@ -53,51 +71,26 @@ export default function LoginForm() {
           />
         </div>
 
-        {/* captcha */}
-        <div className="flex w-full flex-col items-start">
-          <input
-            type="text"
-            className="mt-4 w-full rounded-lg border border-[#E8E8E8] bg-white px-9 py-7 text-black italic outline-none focus-within:outline-none"
-            readOnly
-            value={"U A g l u o"}
-          />
-
-          <button
-            className="font-inter mt-2 cursor-pointer text-xl font-semibold text-[#5D5FEF]"
-            type="button"
-          >
-            Reload Captcha
-          </button>
-
-          <input
-            type="text"
-            name="recaptcha"
-            placeholder="Type here"
-            required
-            className="mt-4 w-full rounded-lg border border-[#E8E8E8] bg-white px-9 py-7 text-[#A1A1A1] outline-none focus-within:outline-none"
-          />
-        </div>
-
-        {/* login button */}
+        {/* register button */}
         <button
           type="submit"
           className="font-inter flex w-full cursor-pointer items-center justify-center rounded-lg bg-[#d19f54ce] py-6 text-xl font-bold text-white transition-all duration-300 ease-linear hover:bg-[#D1A054B2]"
         >
-          Sign In
+          Sign Up
         </button>
       </form>
 
       {/* register link */}
       <p className="font-inter text-center text-lg font-medium text-[#D1A054]">
-        New here?{" "}
-        <Link href={"/register"}>
-          <span className="font-bold">Create a New Account</span>
+        Already registered?{" "}
+        <Link href={"/login"}>
+          <span className="font-bold">Go to log in</span>
         </Link>
       </p>
 
       {/* title */}
       <p className="font-inter mt-4 text-center text-lg font-medium text-[#444]">
-        Or sign in with
+        Or sign up with
       </p>
 
       {/* icons */}
